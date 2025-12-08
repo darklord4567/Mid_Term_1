@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* MAIN GRID LAYOUT */
+    .container {
+        display: grid;
+        grid-template-rows: 70px auto auto 60px;
+        grid-template-columns: 250px auto;
+        grid-template-areas:
+            "header header"
+            "sidebar main"
+            "gallery gallery"
+            "footer footer";
+    }
+
+    /* HEADER */
+    header {
+        grid-area: header;
+        background: #333;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .menu-btns {
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        gap: 10px;
+    }
+
+    .menu-btns div {
+        background: #555;
+        padding: 8px 12px;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /* SIDEBAR */
+    aside {
+        grid-area: sidebar;
+        background: #eee;
+        padding: 20px;
+    }
+
+    aside div {
+        margin: 10px 0;
+        cursor: pointer;
+    }
+
+    /* MAIN CONTENT */
+    main {
+        grid-area: main;
+        padding: 20px;
+        background: #fafafa;
+    }
+
+    /* GALLERY */
+    .gallery {
+        grid-area: gallery;
+        padding: 20px;
+        background: #f0f0f0;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .gallery-grid div {
+        height: 80px;
+        background: #ccc;
+        border-radius: 5px;
+    }
+
+    /* CONTACT FORM */
+    .contact-form {
+        margin-top: 20px;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    /* FOOTER */
+    footer {
+        grid-area: footer;
+        background: #222;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <h2>Logo</h2>
+        <div class="menu-btns">
+            <div>H</div>
+            <div>S</div>
+            <div>G</div>
+            <div>C</div>
+        </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside>
+        <div>Home</div>
+        <div>Services</div>
+        <div>Gallery</div>
+        <div>Contact</div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2>Heading</h2>
+        <p>line 1</p>
+        <p>line 2</p>
+        <p>line 3</p>
+    </main>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <h2>Contact</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Phone">
+            <textarea placeholder="Message" rows="3"></textarea>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
