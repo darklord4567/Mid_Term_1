@@ -1,1 +1,19 @@
 A well‑designed webpage uses various HTML elements to make content more interactive, organized, and user‑friendly. Multimedia elements (images, audio, video) help illustrate concepts visually, improving engagement. Hyperlinks allow smooth navigation within the site or to external resources. Tables organize structured data clearly, helping users compare information. Forms collect user input efficiently for tasks like sign‑up or feedback. Lists present information in readable points, improving clarity and scanning.
+
+
+
+1. Multimedia Elements
+
+Multimedia such as images, audio, and video make content engaging and help users understand information better.
+
+Example:
+
+<img src="car.jpg" alt="Car Image" width="200">
+<video controls width="250">
+  <source src="intro.mp4" type="video/mp4">
+</video>
+<audio controls>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+
