@@ -44,3 +44,19 @@ Example:
 </table>
 
 
+4. Forms
+
+Forms collect user data, improving interaction between the user and the website.
+
+Example:
+
+<form>
+  <label>Name:</label>
+  <input type="text">
+
+  <label>Email:</label>
+  <input type="email">
+
+  <button type="submit">Submit</button>
+</form>
+
