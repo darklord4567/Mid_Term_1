@@ -26,3 +26,21 @@ Example:
 <a href="https://example.com">Visit Example</a>
 <a href="#section2">Go to Section 2</a>
 
+3. Tables
+
+Tables display structured data so users can read and compare information quickly.
+
+Example:
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Aman</td>
+    <td>22</td>
+  </tr>
+</table>
+
+
