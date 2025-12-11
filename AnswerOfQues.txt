@@ -76,3 +76,5 @@ Example:
   <li>Step One</li>
   <li>Step Two</li>
 </ol>
+
+By combining multimedia, hyperlinks, tables, forms, and lists effectively, a webpage becomes more interactive, structured, and user‑friendly. These elements improve both usability and accessibility, helping users find information and interact easily.
