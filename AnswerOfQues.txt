@@ -60,3 +60,19 @@ Example:
   <button type="submit">Submit</button>
 </form>
 
+5. Lists
+
+Lists help organize information in simple, readable points.
+
+Example:
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+<ol>
+  <li>Step One</li>
+  <li>Step Two</li>
+</ol>
